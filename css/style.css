@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  background: url('../img/hixs_pattern_evolution.png') repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Roboto Mono', monospace;
+  color: #f2f3f4;
+
+}
+
+h2 {
+  font-size: 52px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+  .danger {
+    color: #D90429;
+  }
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+section[data-state="optionScreen"] {
+  background: url('../img/zwartevilt.png') repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  section[data-state="optionScreen"] hr {
+    border-top: 2px solid #000;
+    width: 100px;
+  }
+
+  section[data-state="optionScreen"] input {
+    height: 50px;
+    width: 50px;
+    font-size: 22px;
+  }
+
+  button[data-action="startGame"] {
+    background-color: transparent;
+    color: #D90429;
+    border: none;
+    font-size: 24px;
+    text-decoration: underline;
+  }
+
+section[data-state="playScreen"] {
+  background: url('../img/zwartevilt.png') repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section[data-state="victory"] {
+  background: url('../img/zwartevilt.png') repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gameScreens {
+  width: 70vw;
+  height: 70vh;
+  background-color: #f2f3f4;
+  border: 15px solid #000;
+  border-radius: 15px;
+  box-shadow: 1px 2px 30px 3px rgba(255, 255, 255, 0.3) inset;
+}
+
+.gameContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gameDiv {
+  height: 38px;
+  width: 38px;
+  border: 1px solid white;
+}
+
+.hidden {
+  display: none!important;
+}
+
+.resetButton {
+  position: fixed;
+  top: 0;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jsGame</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <button class="resetButton" data-action="reset">Clear Local Storage</button>
+    <section data-state="optionScreen" class="gameScreens hidden">
+      <h2>COR<span class="danger">GIT GOOD</span> : OPTIONS</h2>
+      <button class="mb-2" data-action="startGame">START GAME</button>
+      <label class="mb-2" for="x">Nombre de cases sur l'axe X</label>
+      <input class="mb-2" id="x" type="number" name="x" value="10">
+      <label class="mb-2" for="y">Nombre de cases sur l'axe Y</label>
+      <input id="y" type="number" name="y" value="10">
+
+    </section>
+    <section data-state="playScreen" class="gameScreens hidden"></section>
+    <section data-state="victory" class="gameScreens hidden">
+      <h2>Supercalifragilistic<span class="danger">expialidocious</span> !</h2>
+      <button data-action="reset">Retry</button>
+    </section>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+</html>
